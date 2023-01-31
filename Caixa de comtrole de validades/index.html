@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de estoque</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main class="conteudo">
+        <div class="principal">
+            <img class="caixa"
+                src="img/caixa.png" alt="caixa reistradora" >
+            <form action="" class="adicionar" id="novoItem">
+                <label for="item">Nome no produto</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="item">Quantidade produtos</label>
+                <input type="number" name="quantidade" id="quantidade" required>
+                <label for="data">Data de validade</label>
+                <input type="date" name="data" id="data" required>
+                <input type="submit" value="Adicionar" class="cadastrar">
+            </form>
+        </div>
+        
+        <ul class="lista" id="lista">
+            
+        </ul>
+    </main>
+</body>
+<script src="js/main.js" ></script>
+</html>
