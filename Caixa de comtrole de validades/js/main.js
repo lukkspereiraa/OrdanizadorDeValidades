@@ -2,14 +2,7 @@ const formulario = document.getElementById("novoItem");
 const lista = document.getElementById('lista')
 
 const itens = JSON.parse(localStorage.getItem('itens')) || []
-
-
-itens.forEach( (element) => {
-    criarElemento(element)
-});
-
 var praso = new Date();
-
 var dia = String(praso.getDate()).padStart(2 ,'0');
 var mes = String(praso.getMonth()+1).padStart(2,'0');
 var ano = praso.getFullYear();
@@ -20,6 +13,13 @@ var mesNovo = String(parseInt(mes)+1.).padStart(2 ,'0')
 var anoNovo = `${ano+1}`
 
 var dataUmNaFrente= `${ano}-${mesNovo}-${dia}`;
+
+
+itens.forEach( (element) => {
+    criarElemento(element)
+});
+
+
 
 if (mesNovo == 13) {
     
